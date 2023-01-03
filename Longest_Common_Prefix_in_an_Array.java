@@ -22,7 +22,6 @@ public class Longest_Common_Prefix_in_an_Array {
             return arr[0];
         for(int i=0;i<maxsize;i++){
             String s1="";
-            int ct=0;
             for(int j=1;j<n;j++){
                 if(arr[j-1].charAt(i)!=arr[j].charAt(i)){
                     s1="";
@@ -41,6 +40,7 @@ public class Longest_Common_Prefix_in_an_Array {
         }
         
         return s;
+    }
     public static void main(String[] args) {
         String[] arr={"geeksforgeeks", "geeks", "geek","geezer"};
         int N =arr.length;
