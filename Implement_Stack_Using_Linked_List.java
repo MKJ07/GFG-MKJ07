@@ -46,6 +46,7 @@ class GfG {
             System.out.println("");
             t--;
         }
+        sc.close();
     }
 }//  Driver Code Ends
 
