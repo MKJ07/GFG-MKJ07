@@ -1,10 +1,16 @@
 import java.util.*;
 /*Question:- Finding middle element in a linked list
 Link:-https://practice.geeksforgeeks.org/problems/finding-middle-element-in-a-linked-list/1
+Input: LinkedList: 1->2->3->4->5
+Output: 3 
+Explanation: Middle of linked list is 3.
 
- */
+Input: LinkedList: 2->4->6->7->5->1
+Output: 7 
+Explanation: Middle of linked list is 7.
+*/
+
 //{ Driver Code Starts
-
 class Node {
     int data;
     Node next;
