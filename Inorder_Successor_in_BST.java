@@ -2,6 +2,33 @@ import java.util.LinkedList;
 import java.util.Queue; 
 import java.io.*;
 import java.util.*;
+/*Question: Inorder Successor in BST
+Link: https://practice.geeksforgeeks.org/problems/inorder-successor-in-bst/1
+
+Input 1:
+      2
+    /   \
+   1     3
+K(data of x) = 2
+Output: 3 
+Explanation: 
+Inorder traversal : 1 2 3 
+Hence, inorder successor of 2 is 3.
+
+Input 2:
+             20
+            /   \
+           8     22
+          / \
+         4   12
+            /  \
+           10   14
+K(data of x) = 8
+Output: 10
+Explanation:
+Inorder traversal: 4 8 10 12 14 20 22
+Hence, successor of 8 is 10.
+ */
 class Node
 {
     int data;
@@ -131,7 +158,6 @@ class Solution
 	public Node inorderSuccessor(Node root,Node x)
 	{
         //add code here.
-        Node res=null;
         inorder(root);
         for(int i=0;i<list.size();i++){
             if(list.get(i)==x){
