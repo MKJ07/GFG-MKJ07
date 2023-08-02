@@ -11,7 +11,7 @@ Output:
 * * * * 
 * * * * *
  */
-public class Patten2 {
+public class Pattern2 {
     static void printTriangle(int n) {
         // code here
         for(int i=0;i<n;i++){
