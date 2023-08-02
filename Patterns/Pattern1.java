@@ -1,5 +1,15 @@
 package Patterns;
+/*Question : Pattern 1
+Link:https://practice.geeksforgeeks.org/problems/square-pattern/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=pattern_1
+Input: 5
 
+Output:
+* * * * *
+* * * * *
+* * * * *
+* * * * *
+* * * * *
+*/
 public class Pattern1 {
     static void printSquare(int n) {
         // code here
