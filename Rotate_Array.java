@@ -9,6 +9,7 @@ Explanation: 1 2 3 4 5  when rotated
 by 2 elements, it becomes 3 4 5 1 2.
  */
 public class Rotate_Array {
+    /*This method can be used while doing with recursion its just swapping the elements */
     static void rot(int[] arr,int start,int end){
         while(start<end){
             int temp=arr[start];
