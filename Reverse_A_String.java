@@ -9,6 +9,13 @@ class Reverse_A_String{
         }
         return str1;
         // Reverse the string str
+        /*We can use this way also */
+        // String s="";
+        // int n=str.length();
+        // for(int i=0;i<n;i++){
+        //     s+=str.charAt(n-i-1);
+        // }
+        // return s;
     }
     public static void main(String[] args) {
         String s="Geeks";
