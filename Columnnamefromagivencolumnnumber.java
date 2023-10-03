@@ -1,3 +1,12 @@
+/*Question: Column name from a given column number.
+Link: https://practice.geeksforgeeks.org/problems/column-name-from-a-given-column-number4244/1
+
+Input: 
+N = 13
+Output: M
+Explanation: M is the 13th character of
+alphabet.
+*/
 public class Columnnamefromagivencolumnnumber {
     static String colName (long n)
     {
