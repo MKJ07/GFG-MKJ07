@@ -1,3 +1,14 @@
+/*Question: Height of Binary Tree.
+Link: https://practice.geeksforgeeks.org/problems/height-of-binary-tree/1
+
+Input:
+  2
+   \
+    1
+   /
+ 3
+Output: 3  
+*/
 class Node {
     int data;
     Node left, right;
