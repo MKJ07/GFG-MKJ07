@@ -1,3 +1,15 @@
+/*Question: Minimum distance between two numbers.
+Link: https://www.geeksforgeeks.org/problems/minimum-distance-between-two-numbers/1
+
+Input:
+N = 4
+A[] = {1,2,3,2}
+x = 1, y = 2
+Output: 1
+Explanation: x = 1 and y = 2. There are
+two distances between x and y, which are
+1 and 3 out of which the least is 1.
+ */
 public class Minimumdistancebetweentwonumbers {
     static int minDist(int a[], int n, int x, int y) {
         /*This is the optimal approach having TC: O(n) and SC: O(1) */
