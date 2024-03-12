@@ -28,7 +28,8 @@ Explanation:
 g(1) = 1 and g(2) = 1
 g(3) = 2*g(2) + 2*g(1) + 2 = 2*1 + 2*1 + 2 = 6
 g(4) = 2*g(3) + 2*g(2) + 2  = 2*6 + 2*1 + 2 = 16
-We need to return answer modulo 100, so 16%100 = 16, is the answer.*/
+We need to return answer modulo 100, so 16%100 = 16, is the answer.
+*/
 public class GeneralisedFibonaccinumbers {
     static long genFibNum(Long a, Long b, Long c, long n, long m) {
         /*This approach is using recursion and has TC: O(2^n) {for large value of n} and TC: O(n) {for small values of n} */
