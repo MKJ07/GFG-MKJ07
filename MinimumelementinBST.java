@@ -36,8 +36,18 @@ class Node {
     }
 }
 public class MinimumelementinBST {
-    /*This approach has TC: O(n) and SC:O(n) {n: no of nodes in a tree} */
     int minValue(Node root) {
+        /*This optimal approach having TC: O(n) and SC:O(1) {n: no of nodes in a tree} Using DFS */
+        if (root == null)
+        return Integer.MAX_VALUE;
+
+        int min = root.data;
+        int leftMin = minValue(root.left);
+        int rightMin = minValue(root.right);
+        min = Math.min(min, Math.min(leftMin, rightMin));
+        return min;
+
+        /*This approach has TC: O(n) and SC:O(n) {n: no of nodes in a tree} Using BFS
         if (root == null)
             return -1;
         int min = Integer.MAX_VALUE;
@@ -53,7 +63,7 @@ public class MinimumelementinBST {
                 temp.add(t.right);
             }
         }
-        return min;
+        return min;*/
     }
 
     public static void main(String[] args) {
