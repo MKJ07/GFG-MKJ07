@@ -1,5 +1,4 @@
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 /*Question: Minimum element in BST.
 Link: https://www.geeksforgeeks.org/problems/minimum-element-in-bst/1
 
