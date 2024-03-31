@@ -1,6 +1,3 @@
-// import java.util.*;
-/* */
-//{ Driver Code Starts
 class Node {
     int data;
     Node next;
@@ -15,7 +12,7 @@ class Solution {
         Node temp = del;
         temp.data = del.next.data;
         temp.next = temp.next.next;
-        // We can go by another method in this w12767e are copying the del node data
+        // We can go by another method in this are copying the del node data
         // to previous node and assigning the previous node to del.next address
         /*
         Node curr=del.next;
