@@ -31,30 +31,34 @@ is the smallest, so the answer is 1.
 
 public class Rowwithminimumnumberof1s {
     int minRow(int n, int m, int a[][]) {
-        /*This approach has TC: O(n*m) and SC: O(1) {n: no of rows in the matrix, m: no of columns in the matrix} */
-        int row=0,cnt=Integer.MAX_VALUE;
-        for(int i=0;i<n;i++){
-            int temp=0;
-            for(int j=0;j<m;j++){
-                if(a[i][j]==1)
-                    temp+=1;
+        /*
+         * This approach has TC: O(n*m) and SC: O(1) {n: no of rows in the matrix, m: no
+         * of columns in the matrix}
+         */
+        int row = 0, cnt = Integer.MAX_VALUE;
+        for (int i = 0; i < n; i++) {
+            int temp = 0;
+            for (int j = 0; j < m; j++) {
+                if (a[i][j] == 1)
+                    temp += 1;
             }
-            if(temp<cnt){
-                row=i;
-                cnt=temp;
+            if (temp < cnt) {
+                row = i;
+                cnt = temp;
             }
         }
-        return row+1;
+        return row + 1;
     }
+
     public static void main(String[] args) {
         int[][] matrix = {
-            {0, 1, 0},
-            {0, 0, 1},
-            {1, 1, 0}
+                { 0, 1, 0 },
+                { 0, 0, 1 },
+                { 1, 1, 0 }
         };
         int n = matrix.length;
         int m = matrix[0].length;
-        Rowwithminimumnumberof1s obj=new Rowwithminimumnumberof1s();
+        Rowwithminimumnumberof1s obj = new Rowwithminimumnumberof1s();
         System.out.println(obj.minRow(n, m, matrix));
     }
 }
