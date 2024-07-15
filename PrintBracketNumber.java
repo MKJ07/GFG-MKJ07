@@ -19,7 +19,7 @@ Explanation:
 
 public class PrintBracketNumber {
     ArrayList<Integer> bracketNumbers(String str) {
-        /*This is the optimal approach having TC: O(n) and SC: O(n) {n: length of the string} */
+        /*This is the optimal approach having TC: O(n) and SC: O(n) {n: length of the stringRemaining String} */
         Stack<Integer> st=new Stack<>();
         ArrayList<Integer> a1=new ArrayList<>();
         int cnt=0,n=str.length();
