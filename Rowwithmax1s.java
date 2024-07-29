@@ -16,8 +16,24 @@ Explanation:
     Row 1 contains 2 1's (0-based indexing).
 */
 public class Rowwithmax1s {
+    /*This is the optimize aolution having TC: O(N+M) and SC: O(1) { N: no of rows, M: no of columns } */
     public int rowWithMax1s(int arr[][]) {
-        /*This approach has TC: O(NxM) and SC: O(1) { N: no of rows, M: no of columns } */
+        int idx = -1;
+        int n = arr.length;
+        int m = arr[0].length;
+
+        int j = m - 1;
+    
+        for (int i = 0; i < n; i++) {
+            while (j >= 0 && arr[i][j] == 1) {
+                j--;
+                idx = i;
+            }
+        }
+        return idx;
+
+
+        /*This approach has TC: O(NxM) and SC: O(1) { N: no of rows, M: no of columns } 
         int maxOne=0;
         int idx=-1;
         int n=arr.length;
@@ -34,7 +50,7 @@ public class Rowwithmax1s {
                 maxOne=cnt;
             }
         }
-        return idx;
+        return idx; */
     }
     public static void main(String[] args) {
         int[][] arr = {
